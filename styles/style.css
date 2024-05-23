@@ -34,7 +34,6 @@
   column-gap: 20px;
   list-style-type: none;
   padding: 0;
-  flex-direction: row-reverse;
   align-items: end;
   display: flex;
   flex-direction: row;
