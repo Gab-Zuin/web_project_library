@@ -1,9 +1,8 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
+  margin: auto;
+  font-family: arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -25,18 +24,16 @@
 }
 
 .nav__logo {
-  height: 80px;
   width: 58px;
+  height: 80px;
 }
 
 .nav__links {
-  margin: 8px 0 0;
+  display: flex;
   column-gap: 20px;
   list-style-type: none;
-  padding: 0;
-  align-items: end;
-  display: flex;
-  flex-direction: row;
+  padding: 0px;
+  margin: 8px 0 0;
 }
 
 .nav__link {
@@ -52,6 +49,7 @@
 
 .header__title {
   margin-top: 128px;
+  margin-bottom: 0;
   font-size: 62px;
   line-height: 76px;
   font-weight: 500;
@@ -59,10 +57,10 @@
 }
 
 .header__description {
-  margin-top: 32px;
   font-size: 20px;
   line-height: 30px;
   max-width: 515px;
+  margin-top: 32px;
 }
 
 .header__image {
@@ -91,9 +89,9 @@
 .staff {
   background-image: url("../images/staff_picks_background.jpg");
   padding: 100px 0 140px;
+  background-position: 0% 0%;
+  background-repeat: repeat;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .staff__title {
@@ -115,15 +113,17 @@
 }
 
 .staff__cards {
-  max-width: 760px;
-  margin: 68px auto 0;
   display: flex;
   justify-content: center;
+  max-width: 760px;
+  margin: auto;
+  margin-top: 68px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 40px;
-  flex-wrap: wrap;
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 .card {
@@ -131,8 +131,9 @@
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
-  width: 360px;
   height: 420px;
+  width: 360px;
+  overflow: scroll;
 }
 
 .card__content {
@@ -156,11 +157,13 @@
 }
 
 .card__footer {
-  margin: 0;
+  margin-top: auto;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  margin-top: auto;
 }
 .events {
   padding: 100px 0 120px 80px;
@@ -248,7 +251,6 @@
   top: -30px;
   left: 319px;
 }
-
 .person_name_burbidge {
   top: 96px;
   right: 125px;
@@ -290,7 +292,6 @@
   font-size: 14px;
   margin: 0;
 }
-
 .membership {
   padding: 100px 0 140px;
   background-color: #057bf2;
@@ -308,19 +309,15 @@
 
 .membership__steps {
   list-style-type: none;
-  padding: 0;
-  margin: 100px 0 0;
+  column-gap: 40px;
   display: flex;
   justify-content: center;
-  column-gap: 40px;
+  padding: 0;
+  margin: 100px 0 0;
 }
 
 .step {
   flex-basis: 220px;
-  padding-right: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .step__title {
@@ -342,14 +339,17 @@
 
 .footer {
   box-sizing: border-box;
-  padding: 80px 60px;
   background-color: #1f1f1f;
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  color: #fff;
 }
 
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  color: #fff;
 }
 
 .footer__column_content_hours {
@@ -357,6 +357,9 @@
 }
 
 .footer__column_content_social {
+  display: block;
+  margin-top: auto;
+  margin-right: 0;
   margin-left: 80px;
 }
 
@@ -366,11 +369,10 @@
 }
 
 .footer__column-heading {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer__list {
-  /* El siguiente código elimina los estilos predeterminados del navegador para las listas */
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -381,7 +383,6 @@
 }
 
 .footer__column-link {
-  color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -394,5 +395,5 @@
 }
 
 .footer__copyright {
-  color: #fff;
+  margin-top: 100px;
 }
